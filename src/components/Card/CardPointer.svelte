@@ -7,5 +7,9 @@
     <div class="w-6 h-6 flex items-center justify-center">
         <i class={`${icon}`} />
     </div>
-    <span>{text}</span>
+    {#if text}
+        <span>{text}</span>
+    {:else}
+        <span class="text-gray-400">Not available</span>
+    {/if}
 </div>

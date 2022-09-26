@@ -1,9 +1,5 @@
 <script>
-    import Card from "./components/Card/Card.svelte";
-    import Header from "./components/Header/Header.svelte";
-    import Search from "./components/Search/Search.svelte";
-</script>
+    import Home from "./pages/Home.svelte";
 
-<Header />
-<Search />
-<Card />
+</script>
+<Home />

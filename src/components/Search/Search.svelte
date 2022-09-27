@@ -7,7 +7,7 @@
 
     const handleSubmit = async () => {
         const data = await getUser(inputValue);
-        // store.set(data);
+        store.set(data);
     };
 </script>
 

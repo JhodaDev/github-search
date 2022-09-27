@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 export default async function getUser(request, response) {
     const { user } = request.query;
     const res = await fetch(`https://api.github.com/users/${user}`, {

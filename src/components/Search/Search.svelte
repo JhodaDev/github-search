@@ -1,13 +1,13 @@
 <script>
-    import { getUser } from "../../api/github_api";
+    // import { getUser } from "../../api/github_api";
     import { store } from "../../store/store";
     import Container from "../UI/Container.svelte";
 
     let inputValue = "";
 
     const handleSubmit = async () => {
-        const data = await getUser(inputValue);
-        store.set(data);
+        // const data = await getUser(inputValue);
+        // store.set(data);
     };
 </script>
 

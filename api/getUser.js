@@ -1,10 +1,13 @@
-export default function handler(request, response) {
-    console.log("first log")
-    response.status(200).json({
-        body: request.body,
-        query: request.query,
-        cookies: request.cookies,
+export default async function getUser(request, response) {
+    const { user } = request.query;
+    const res = await fetch(`https://api.github.com/users/${user}`, {
+        headers: {
+            'Authorization': `Bearer ${process.env.API_KEY}`
+        }
     });
+    const json = await res.json();
+    console.log(json)
+    response.json(json);
 }
 
 

@@ -8,7 +8,7 @@
     store.subscribe(async (value) => {
         if (!value.hasOwnProperty("id")) {
             const data = await getCurrentUser();
-            store.set(data);
+            // store.set({});
         }
     });
 </script>
